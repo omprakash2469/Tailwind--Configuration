@@ -1,0 +1,43 @@
+npm - Node Package Manager
+
+You must have node.js installed on your computer
+
+Install extension for tailwindcss class
+    - Tailwind CSS Intellisense
+
+Run this command in your projects folder
+    - npm init -y
+
+Install Tailwindcss
+    - npm install -D tailwindcss postcss autoprefixer vite
+    - npx tailwindcss init -p
+
+Create CSS file
+    - Create input.css file
+    - Paste this in input.css file
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Edit tailwind.config.js
+    - Add "*" in content
+
+Edit Package.json
+    - Replace "test": "..." with "start": "vite"
+
+Start tailwind server
+    - npm run start
+
+
+Include your input.css in index.html file
+
+Get full config file of tailwind
+	- npx tailwindcss init fullconf --full
+
+Prepare for Production
+	- Add "build": "vite build" in package.json under "scripts"
+	- Give proper relative url to css files in index.html
+	- npm run build
+
+Dist folder contains all your website files to deploy on server
